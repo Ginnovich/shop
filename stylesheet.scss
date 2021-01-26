@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  background-color: #f6f3f3;
+  box-sizing: border-box;
+  font-family: "Merriweather", serif;
+}
+
+.header,
+.footer,
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+  width: 90%;
+  margin: 3px auto;
+  min-width: 1200px;
+  .logo {
+    cursor: pointer;
+    margin-right: 48px;
+  }
+  .menu {
+    margin-right: auto;
+    &__link {
+      color: #343030;
+      padding-right: 44px;
+      font-family: "Merriweather", serif;
+      line-height: 150%;
+      font-size: 14px;
+    }
+  }
+  .search {
+    display: flex;
+    &__txt {
+      width: 294px;
+      height: 48px;
+      padding: 14px;
+      border: 1px solid #e1e1e1;
+      color: #9f9f9f;
+      font-family: "Merriweather", serif;
+      line-height: 150%;
+      font-size: 14px;
+      outline: none;
+      &:hover {
+        border: 1px solid #b5b5b5;
+        color: #343030;
+      }
+    }
+    &__btn {
+      height: 48px;
+      width: 122px;
+      border: none;
+      background-color: #403432;
+      font-family: "Merriweather", serif;
+      line-height: 150%;
+      font-size: 14px;
+      font-weight: 700;
+      float: right;
+      color: white;
+      cursor: pointer;
+    }
+  }
+}
+
+.shop {
+  min-height: 768px;
+  border-top: 1px solid #e1e1e1;
+  margin: 0 auto;
+  width: 90%;
+  min-width: 1200px;
+  h1 {
+    margin-top: 45px;
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 150%;
+  }
+  .card-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .card {
+    margin-top: 39px;
+    width: 280px;
+    height: 328px;
+    border: 1px solid #e1e1e1;
+  }
+  .card-disabled {
+    opacity: 0.5;
+  }
+  .article {
+    padding: 16px 0 23px 24px;
+    font-size: 18px;
+    line-height: 150%;
+    color: #343030;
+    font-weight: 400;
+  }
+  &__buy {
+    display: flex;
+    align-items: center;
+  }
+  &__price {
+    padding-left: 24px;
+    padding-right: 26px;
+  }
+  h4 {
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 150%;
+    text-decoration-line: line-through;
+    color: #a0a0a0;
+  }
+  h2 {
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 150%;
+    color: #343030;
+  }
+  .sold {
+    padding-top: 12px;
+  }
+
+  &__btn {
+    height: 48px;
+    width: 122px;
+    border: none;
+    background-color: #403432;
+    font-family: "Merriweather", serif;
+    line-height: 150%;
+    font-size: 14px;
+    font-weight: 700;
+    float: right;
+    color: white;
+    cursor: pointer;
+  }
+}
+
+.footer {
+  width: 100%;
+  height: 112px;
+  background-color: #eceaea;
+  padding-bottom: 0;
+  .menu,
+  .footer-container {
+    background-color: #eceaea;
+    &__link {
+      background-color: #eceaea;
+    }
+  }
+  .tel,
+  .adress {
+    background-image: url(./img/Vector.svg);
+    background-color: #eceaea;
+    background-repeat: no-repeat;
+    background-position: left;
+    color: #555555;
+    font-family: "Merriweather", serif;
+    line-height: 150%;
+    font-size: 14px;
+    font-weight: 400;
+    padding-left: 22px;
+    padding-right: 52px;
+  }
+  .adress {
+    background-image: url(./img/Location.svg);
+    padding-right: 0;
+  }
+}
